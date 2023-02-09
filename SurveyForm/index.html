@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title id="title">Survey Form</title>
+</head>
+<body>
+    <h1>Career Fair Survey Form</h1>
+    <p id="description">Please fill out the form with the required information.</p>
+
+    <form action="" method="post" id="servey-form">
+
+        <fieldset>
+            <label for="name" id="name-label">Enter your full name:
+                <input class="intro" type="text" id="name" placeholder="Full name" required aria-required="true">
+            </label>
+            <label for="email" id="email-label">Enter your email:
+                <input class="intro" type="text" id="email" placeholder="xyz@gmail.com" required aria-required="true">
+            </label>
+            <label for="number" id="number-label">Enter your age:
+                <input class="intro" type="number" id="number" name="age" min="12" max="110" placeholder="Age" required aria-required="true">
+            </label>
+
+            <label>
+                
+            </label>
+
+        </fieldset>
+
+
+
+        <fieldset>
+            <label>Have you ever attendeed a career fair?</label>
+            <label for="yes">
+                <input type="radio" id="yes" name="attended" value="yes" required> Yes
+            </label>
+            <label for="no">
+                <input type="radio" id="no" name="attended" value="no"> No
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <label for="student-state">Which best describes you?</label>
+            <select id="student-state" name="student-state" required>
+                <option value="">Please select one</option>
+                <option value="student">Student</option>
+                <option value="graduated">Graduated</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="employed">Employed</option>
+              </select>
+        </fieldset>
+
+            <label for="view">What are you understand by a career fair?</label>
+           <textarea name="understand" id="understand" cols="55" rows="5"></textarea>
+
+        <fieldset>
+            <label for="">What employment oppertunities you are lookig for?</label>
+            <label for="volunteer">
+                <input type="checkbox" id="volunteer" name="employment" value="volunteer"> Volunteer
+            </label>
+            <label for="internship">
+                <input type="checkbox" id="internship" name="employment" value="internship"> Internship
+            </label>
+            <label for="full-time">
+                <input type="checkbox" id="full-time" name="employment" value="full-time"> Full Time
+            </label>
+            <label for="part-time">
+                <input type="checkbox" id="part-time" name="employment" value="part-time"> Part Time
+            </label>
+            <label for="corporate-job">
+                <input type="checkbox" id="corporate-job" name="employment" value="corporate-job"> Corporate Job
+            </label>
+            <label for="remote">
+                <input type="checkbox" id="remote" name="employment" value="remote"> Remote
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="">What sector would you like to interact during the fair?</label>
+            <label for="agriculture">
+                <input type="radio" id="agriculture" name="interest" value="agriculture" required> Agriculture
+            </label>
+            <label for="automobiles">
+                <input type="radio" id="automobiles" name="interest" value="automobiles"> Automobiles
+            </label>
+            <label for="banking">
+                <input type="radio" id="banking" name="interest" value="banking"> Banking
+            </label>
+            <label for="delivery-service">
+                <input type="radio" id="delivery-service" name="interest" value="delivery-service"> Delivery Services
+            </label>
+            <label for="energy">
+                <input type="radio" id="energy" name="interest" value="energy"> Energy
+            </label>
+            <label for="computer-science">
+                <input type="radio" id="computer-science" name="interest" value="computer-science"> Computer Science
+            </label>
+            <label for="it">
+                <input type="radio" id="it" name="interest" value="it"> IT
+            </label>
+            <label for="electronics">
+                <input type="radio" id="electronics" name="interest" value="electronics"> Electonics
+            </label>
+        </fieldset>
+        
+ 
+           <label>What are your expectations for this career fair?</label>
+             <textarea name="expectations" id="textarea" cols="55" rows="5"></textarea>
+
+        <input type="submit" value="Submit" />
+
+    </form>
+</body>
+</html>
